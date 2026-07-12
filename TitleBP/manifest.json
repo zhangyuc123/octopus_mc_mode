@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "自定义玩家改名插件 - 输入 /crra 触发",
+        "name": "CRRA Nickname Addon",
+        "uuid": "4f1a2b3c-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 26, 20]
+    },
+    "modules": [
+        {
+            "description": "Script Module",
+            "language": "javascript",
+            "type": "script",
+            "uuid": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+            "version": [1, 0, 0],
+            "entry": "scripts/index.js"
+        }
+    ],
+   "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.8.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.1.0-beta"
+        }
+    ]
+}

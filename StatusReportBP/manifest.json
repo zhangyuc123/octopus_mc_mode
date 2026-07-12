@@ -1,0 +1,34 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "服务器状态与事件上报行为包 — 定时上报在线人数/TPS，实时上报玩家事件",
+        "name": "Status Report Addon",
+        "uuid": "54059e98-b5ee-4b7c-bdc1-5f82e0c97ced",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 26, 20]
+    },
+    "modules": [
+        {
+            "description": "Script Module",
+            "language": "javascript",
+            "type": "script",
+            "uuid": "7c6cba18-6cc5-4648-9514-90f4395c9672",
+            "version": [1, 0, 0],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.8.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.1.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-net",
+            "version": "1.0.0-beta"
+        }
+    ]
+}

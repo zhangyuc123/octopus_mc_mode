@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "TP System Plugin",
+    "description": "传送与家园点系统插件",
+    "uuid": "8e5f2a1b-9c3d-4e5f-a6b7-c8d9e0f1a2b3",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 26, 20]
+  },
+  "modules": [
+    {
+      "description": "传送系统脚本逻辑",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+      "version": [1, 0, 0],
+      "entry": "scripts/index.js"
+    }
+  ],
+  "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.8.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.1.0-beta"
+        }
+    ],
+  "capabilities": []
+}
