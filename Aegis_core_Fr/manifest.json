@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§bAegis-Nexus§r 核心",
+        "description": "自适应 AI 优化 — MSPT 与实体剔除",
+        "uuid": "4f29637c-63d1-4e12-9b24-77e8a93e506d",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 0]
+    },
+    "modules": [
+        {
+            "description": "Script Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "a7c2e9b1-3f4d-4e5a-bc6d-2d1e0f9a8b7c",
+            "version": [1, 0, 0],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.13.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0"
+        }
+    ]
+}
